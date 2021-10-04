@@ -12,7 +12,7 @@ aplikasi ini meliputi fitur :
 ### Informasi Rilis
 ***
 
-Versi saat ini 1.0 :
+Versi saat ini 1.1 :
 - perbaikan bug dan penambahan fitur lainnya
 
 ### Installasi
