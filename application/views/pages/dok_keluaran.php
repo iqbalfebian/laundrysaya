@@ -69,15 +69,14 @@
 <body>
   <div class="row">
     <div class="column left">
-      <img style="width: 120px;" src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/000000/external-laundry-shop-laundry-konkapp-outline-color-konkapp.png" />
+      <img style="width: 120px;" src="<?= file_exists('asset/logo/' . $setting->logo) ? base_url() . 'asset/logo/' . $setting->logo : base_url() . 'asset/logo/logo.png'; ?>" />
     </div>
     <div class="column right">
-      <h2>Laundry Saya</h2>
+      <h2><?= $setting->nama_app; ?></h2>
       <p>
-        Ds. Bintang Alam Blok E2 no.09 <br>
-        Kec. Telukjambe Timur, Kab. Karawang
+        <?= $setting->alamat; ?>
       </p>
-      <p>Telp: 085156587124</p>
+      <p>Email: <?= $setting->email; ?></p>
     </div>
   </div>
   <hr>

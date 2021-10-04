@@ -29,9 +29,9 @@
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img src="<?= base_url() ?>/img/logo/logo2.png">
+          <img src="<?= file_exists('asset/logo/' . $setting->logo) ? base_url() . 'asset/logo/' . $setting->logo : base_url() . 'asset/logo/logo.png'; ?>">
         </div>
-        <div class="sidebar-brand-text mx-3">RuangAdmin</div>
+        <div class="sidebar-brand-text mx-3"><?= $setting->nama_app; ?></div>
       </a>
       <hr class="sidebar-divider my-0">
       <li class="nav-item">
@@ -88,7 +88,7 @@
         Pengaturan
       </div>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="<?= base_url() . 'index.php/settings' ?>">
           <i class="fas fa-fw fa-cog"></i>
           <span>Pengaturan APP</span>
         </a>

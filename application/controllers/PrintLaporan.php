@@ -10,6 +10,7 @@ class PrintLaporan extends CI_Controller
   {
     $this->load->helper('rupiah');
     $this->load->model('LaporanModel');
+    $this->load->model('SettingModel');
 
     $mpdf = new Mpdf();
 
@@ -25,7 +26,8 @@ class PrintLaporan extends CI_Controller
         'range' => [
           'awal' => $tglawal,
           'akhir' => $tglakhir
-        ]
+        ],
+        'setting' => $this->SettingModel->ambilData()->row()
       ];
       $view = $this->load->view('pages/dok_pesanan', $data, true);
       $mpdf->WriteHTML(($view));
@@ -39,7 +41,8 @@ class PrintLaporan extends CI_Controller
         'range' => [
           'awal' => '--',
           'akhir' => '--'
-        ]
+        ],
+        'setting' => $this->SettingModel->ambilData()->row()
       ];
       $view = $this->load->view('pages/dok_pesanan', $data, true);
       $mpdf->WriteHTML(($view));
@@ -51,6 +54,8 @@ class PrintLaporan extends CI_Controller
   {
     $this->load->helper('rupiah');
     $this->load->model('LaporanModel');
+    $this->load->model('SettingModel');
+
 
     $mpdf = new Mpdf();
 
@@ -66,7 +71,8 @@ class PrintLaporan extends CI_Controller
         'range' => [
           'awal' => $tglawal,
           'akhir' => $tglakhir
-        ]
+        ],
+        'setting' => $this->SettingModel->ambilData()->row()
       ];
       $view = $this->load->view('pages/dok_keluaran', $data, true);
       $mpdf->WriteHTML(($view));
@@ -80,7 +86,8 @@ class PrintLaporan extends CI_Controller
         'range' => [
           'awal' => '--',
           'akhir' => '--'
-        ]
+        ],
+        'setting' => $this->SettingModel->ambilData()->row()
       ];
       $view = $this->load->view('pages/dok_keluaran', $data, true);
       $mpdf->WriteHTML(($view));

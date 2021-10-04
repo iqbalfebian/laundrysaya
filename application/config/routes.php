@@ -62,3 +62,4 @@ $route['pesanan'] = 'DataPesanan/index';
 $route['pengeluaran'] = 'DataKeluaran/index';
 $route['lap_pesanan'] = 'LaporanPesanan/index';
 $route['lap_keluar'] = 'LaporanKeluar/index';
+$route['settings'] = 'Settings/index';
