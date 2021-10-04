@@ -12,7 +12,10 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
-		"mpdf/mpdf": "^8.0"
+		"mpdf/mpdf": "^8.0",
+		"yohang88/letter-avatar": "^2.2",
+		"stojg/crop": "^1.4",
+		"coffeecode/cropper": "^1.3"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"

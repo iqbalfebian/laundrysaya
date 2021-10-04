@@ -19,4 +19,8 @@ class PengeluaranModel extends CI_Model
   {
     $this->db->delete('laporan_keluar', ['id_laporan' => $data['id_laporan']]);
   }
+  public function hapusSemua()
+  {
+    $this->db->empty_table('laporan_keluar');
+  }
 }

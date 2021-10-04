@@ -13,12 +13,14 @@
   <link href="<?= base_url(); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="<?= base_url(); ?>/css/ruang-admin.min.css" rel="stylesheet">
   <link href="<?= base_url(); ?>/css/sweetalert2.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>/css/datepicker.min.css" rel="stylesheet">
   <link href="<?= base_url(); ?>/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <script src="<?= base_url() ?>/vendor/jquery/jquery.min.js"></script>
   <script src="<?= base_url(); ?>/js/sweetalert2.all.min.js"></script>
   <script src="<?= base_url(); ?>/js/jquery.validate.min.js"></script>
   <script src="<?= base_url() ?>/vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="<?= base_url() ?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="<?= base_url() ?>/js/datepicker.js"></script>
 </head>
 
 <body id="page-top">
@@ -70,13 +72,13 @@
         Laporan
       </div>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="<?= base_url() . 'index.php/lap_pesanan' ?>">
           <i class="fas fa-fw fa-file"></i>
           <span>Laporan Pesanan</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= base_url() . 'index.php/lap_keluar' ?>">
           <i class="fas fa-fw fa-file"></i>
           <span>Laporan Pengeluaran</span>
         </a>

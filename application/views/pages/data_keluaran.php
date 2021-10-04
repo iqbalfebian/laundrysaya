@@ -318,5 +318,25 @@
         }
       });
     });
+
+    $('#bersihkan').click(function() {
+      Swal.fire({
+        title: 'Yakin ingin menghapus semua entri?',
+        showCancelButton: true,
+        cancelButtonText: 'Batal',
+        confirmButtonText: 'Hapus',
+        confirmButtonColor: '#d33',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          $.get({
+            url: url + 'hapussemua',
+            success: function() {
+              table.ajax.reload();
+              Swal.fire('Data dihapus!', '', 'success');
+            }
+          });
+        }
+      });
+    });
   });
 </script>

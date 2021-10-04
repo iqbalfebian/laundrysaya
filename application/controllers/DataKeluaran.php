@@ -50,4 +50,10 @@ class DataKeluaran extends CI_Controller
     $data['id_laporan'] = $this->input->post('id_laporan');
     $this->PengeluaranModel->hapusData($data);
   }
+
+  public function hapusSemua()
+  {
+    $this->load->model('PengeluaranModel');
+    $this->PengeluaranModel->hapusSemua();
+  }
 }

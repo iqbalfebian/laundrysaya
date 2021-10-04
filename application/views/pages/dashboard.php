@@ -1,8 +1,8 @@
 <div class="container-fluid" id="container-wrapper">
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800"><?=$pageName?></h1>
+    <h1 class="h3 mb-0 text-gray-800"><?= $pageName ?></h1>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="<?=base_url() . 'index.php/dasbor';?>">Home</a></li>
+      <li class="breadcrumb-item"><a href="<?= base_url() . 'index.php/dasbor'; ?>">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
     </ol>
   </div>
@@ -15,10 +15,10 @@
           <div class="row align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-uppercase mb-1">Laba Bersih Bulan Ini</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$pendapatan;?></div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $pendapatan; ?></div>
               <div class="mt-2 mb-0 text-muted text-xs">
-                <span class="text-danger"><b><?=$pendapatanKotor;?></b></span>
-                <span>- Omset</span>
+                <span class="text-danger"><b><?= $pendapatanKotor; ?></b></span>
+                <span>- Omset Bulan Ini</span>
               </div>
             </div>
             <div class="col-auto">
@@ -35,9 +35,9 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-uppercase mb-1">Total Cucian Masuk bulan Ini</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$bulanini;?> pelanggan</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $bulanini; ?> pelanggan</div>
               <div class="mt-2 mb-0 text-muted text-xs">
-                <span class="text-success mr-2"> <?=$bulanKemarin;?> </span>
+                <span class="text-success mr-2"> <?= $bulanKemarin; ?> </span>
                 <span>Pelanggan bulan Kemarin</span>
               </div>
             </div>
@@ -55,8 +55,8 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-uppercase mb-1">Cucian Sedang Diproses</div>
-              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?=$diproses;?></div>
-              <div class="mt-2 mb-0 text-muted text-xs">
+              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?= $diproses; ?></div>
+              <div class="mt-4 mb-0 text-muted text-xs">
                 <!-- <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 20.4%</span>
                 <span>Since last month</span> -->
               </div>
@@ -75,8 +75,8 @@
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="text-xs font-weight-bold text-uppercase mb-1">Cucian Selesai</div>
-              <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$selesai;?></div>
-              <div class="mt-2 mb-0 text-muted text-xs">
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $selesai; ?></div>
+              <div class="mt-4 mb-0 text-muted text-xs">
                 <!-- <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
                 <span>Since yesterday</span> -->
               </div>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="col mr-2">
                       <div class="text-md font-weight-bold text-uppercase mb-1">
-                        <a class="text-white" href="<?=base_url() . 'index.php/karyawan'?>">Data Karyawan</a>
+                        <a class="text-white" href="<?= base_url() . 'index.php/karyawan' ?>">Data Karyawan</a>
                       </div>
                     </div>
                   </div>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col mr-2">
                       <div class="text-md font-weight-bold text-uppercase mb-1">
-                        <a class="text-white" href="<?=base_url() . 'index.php/pesanan'?>">Data Pesanan</a>
+                        <a class="text-white" href="<?= base_url() . 'index.php/pesanan' ?>">Data Pesanan</a>
                       </div>
                     </div>
                   </div>
@@ -156,7 +156,7 @@
                     </div>
                     <div class="col mr-2">
                       <div class="text-md font-weight-bold text-uppercase mb-1">
-                        <a class="text-white" href="<?=base_url() . 'index.php/pengeluaran'?>">Data Pengeluaran</a>
+                        <a class="text-white" href="<?= base_url() . 'index.php/pengeluaran' ?>">Data Pengeluaran</a>
                       </div>
                     </div>
                   </div>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="col mr-2">
                       <div class="text-md font-weight-bold text-uppercase mb-1">
-                        <a class="text-white" href="#">Laporan Order</a>
+                        <a class="text-white" href="<?= base_url() . 'index.php/lap_pesanan' ?>">Laporan Order</a>
                       </div>
                     </div>
                   </div>
@@ -188,7 +188,7 @@
                     </div>
                     <div class="col mr-2">
                       <div class="text-md font-weight-bold text-uppercase mb-1">
-                        <a class="text-white" href="#">Laporan Pengeluaran</a>
+                        <a class="text-white" href="<?= base_url() . 'index.php/lap_keluar' ?>">Laporan Pengeluaran</a>
                       </div>
                     </div>
                   </div>
