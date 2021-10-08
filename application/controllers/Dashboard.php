@@ -1,13 +1,18 @@
 <?php
 
-use Mpdf\Mpdf;
-
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller
 {
+  public function __construct()
+  {
+    parent::__construct();
+    cekLogin();
+  }
   public function index()
   {
+    // var_dump($this->session->userdata);
+    // die;
     $this->load->helper('template');
     $this->load->helper('rupiah');
     $this->load->model('PendapatanModel');

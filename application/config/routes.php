@@ -63,3 +63,8 @@ $route['pengeluaran'] = 'DataKeluaran/index';
 $route['lap_pesanan'] = 'LaporanPesanan/index';
 $route['lap_keluar'] = 'LaporanKeluar/index';
 $route['settings'] = 'Settings/index';
+
+//Auth Route
+$route['admin'] = 'Auth/index';
+$route['proses_login'] = 'Auth/loginUser';
+$route['logout'] = 'Auth/logoutUser';

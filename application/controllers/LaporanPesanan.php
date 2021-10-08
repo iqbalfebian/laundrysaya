@@ -26,4 +26,11 @@ class LaporanPesanan extends CI_Controller
     $data['data'] = $this->LaporanModel->filter($awal, $akhir)->result();
     echo json_encode($data);
   }
+
+  public function chartIndex()
+  {
+    $this->load->model('ChartModel');
+    $data = $this->ChartModel->chartData();
+    echo json_encode($data);
+  }
 }

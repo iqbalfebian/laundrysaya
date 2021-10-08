@@ -34,7 +34,7 @@ class DataKaryawan extends CI_Controller
     $data = [
       'name' => $this->input->post('name'),
       'username' => $this->input->post('uname'),
-      'password' => $this->input->post('password'),
+      'password' => sha1($this->input->post('password')),
       'email' => $this->input->post('email'),
       'phone' => $this->input->post('hp'),
       'address' => $this->input->post('alamat'),
@@ -52,7 +52,7 @@ class DataKaryawan extends CI_Controller
       'email' => $this->input->post('email'),
       'role_id' => $this->input->post('role_id'),
       'username' => $this->input->post('username'),
-      'password' => $this->input->post('password')
+      'password' => sha1($this->input->post('password'))
     ];
     $this->PelangganModel->editPelanggan($data, $id);
   }

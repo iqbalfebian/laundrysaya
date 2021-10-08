@@ -89,8 +89,26 @@
       </div>
     </div>
   </div>
-  <!--Row-->
+
   <div class="row mb-2">
+    <div class="col-lg-12">
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Grafik Pendapatan Laundry</h6>
+        </div>
+        <div class="card-body">
+          <div class="chart-bar">
+            <canvas id="myBarChart"></canvas>
+          </div>
+          <hr>
+          Pendapatan Laundry Setiap Bulannya
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Row-->
+  <div class="row mb-4">
     <div class="col-lg-12">
       <div class="card">
         <div class="card-header">
@@ -98,7 +116,6 @@
         </div>
         <div class="card-body">
           <div class="row">
-
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card h-100 text-white bg-gradient-primary">
                 <div class="card-body">
@@ -108,7 +125,7 @@
                     </div>
                     <div class="col mr-2">
                       <div class="text-md font-weight-bold text-uppercase mb-1">
-                        <a class="text-white" href="#">Data Pelanggan</a>
+                        <a class="text-white" href="<?= base_url() . 'index.php/pelanggan' ?>">Data Pelanggan</a>
                       </div>
                     </div>
                   </div>
@@ -208,20 +225,23 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+          <h5 class="modal-title" id="exampleModalLabelLogout">Konfirmasi</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Are you sure you want to logout?</p>
+          <p>Apakah anda benar ingin logout ?</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-          <a href="login.html" class="btn btn-primary">Logout</a>
+          <a href="<?= base_url() . 'index.php/logout' ?>" class="btn btn-primary">Logout</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 </div>
+
+<script src="<?= base_url() ?>/vendor/chart.js/Chart.min.js"></script>
+<script src="<?= base_url() ?>/js/chart-bar.js"></script>
